@@ -1,0 +1,2 @@
+mylist = [] #lists
+print(mylist)

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="ManaPamatne" width="200"
+    height="200" style="border:5px solid blueviolet; background-color: burlywood;">
+    </canvas>
+    <script> 
+        var pamatne = document.getElementById("ManaPamatne");
+        var zimejums = pamatne.getContext("2d");
+        //dzweltens taisnstūris ar zinu apmali
+        zimejums.beginPath(); //sākt zīmējumu
+        zimejums.rect(20,20,160,70);
+        zimejums.lineWitdh = 5 ;//līnijas biezums
+        zimejums.strokeStile="blue";// līnijas krāsa
+        zimejums.fillStile="yelow";//aizpildījuma krāsa
+        zimejums.fill();//parādīt aizpildījumu
+        zimejums.stroke();//parādīt līniju
+        //divas acis
+        zimejums.beginPath();
+        zimejums.rect(120,40,30,30)
+        zimejums.rect(50,40,30,30)
+        zimejums.lineWitdh = 5
+        zimejums.strokeStile="red";
+        zimejums.fillStile="green";
+        </script>
+</body>
+</html>

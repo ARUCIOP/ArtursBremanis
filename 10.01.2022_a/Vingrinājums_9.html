@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>poga kas kaut ko dara....</title>
+</head>
+<body>
+        <p>Piespied pogu</p>
+        <button type="button" onclick="manaFunkcija()">Uzzīmē</button>
+        <br>
+    <canvas id="ManaPamatne" width="200"
+        height="200" style="border:5px solid black; background-color: burlywood;">
+    </canvas>
+
+    <script>
+        
+        function manaFunkcija() {
+            var pamatne = document.getElementById("ManaPamatne")
+        var zimejums = pamatne.getContext("2d")
+        zimejums.lineWidth = 5
+        zimejums.strokeRect(5,5,50,50)
+        }
+    </script>
+</body>
+</html>

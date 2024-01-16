@@ -1,0 +1,1 @@
+lietotājam ir iespēja izvēlēties vai nu laiku un datumu ievadīt manuāli vai automātiski(dators automātiski ievada)

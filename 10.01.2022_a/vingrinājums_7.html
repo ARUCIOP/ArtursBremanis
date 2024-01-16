@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="ManaPamatne" width="200"
+    height="200" style="border:5px solid black; background-color: burlywood;">
+    </canvas>
+
+    <script>
+        var pamatne = document.getElementById("ManaPamatne")
+        var zimejums = pamatne.getContext("2d")
+        var x1=Number(prompt("ievadi nogriežņa galapungtu x1 kordinātu"));
+        var y1=Number(prompt("ievadi nogriežņa galapungtu y1 kordinātu"));
+        var x2=Number(prompt("ievadi nogriežņa galapungtu x2 kordinātu"));
+        var y2=Number(prompt("ievadi nogriežņa galapungtu y2 kordinātu"));
+        zimejums.beginPath();//sāk zīmējuma izveidi
+        zimejums.moveTo(x1,y1);//norāda ceļu bez līnijas
+        zimejums.lineTo(x2,y2);
+        zimejums.stroke();//parādīt līniju
+        var x = Math.min(x1,x2);//ar mazo (x, y, w, h)!!!
+        var y = Math.min(y1,y2);
+        var w = Math.abs(x1-x2);
+        var h = Math.abs(y1-y2);
+        zimejums.strokeRect(x,y,w,h);
+    </script>
+</body>
+</html>
